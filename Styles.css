@@ -1,0 +1,332 @@
+.section {
+    display: none; /* Hide all sections by default */
+}
+
+.section.active {
+    display: block; /* Show only the active section */
+}
+
+
+
+.soft-pill-btn {
+    background-color: #ff7f9e; /* Soft pink */
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px; /* Soft pill shape */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.soft-pill-btn:hover {
+    background-color: #ff9aa3; /* Lighter pink */
+}
+
+.soft-pill-btn:active {
+    animation: bounce 0.5s forwards; /* Bounce animation */
+}
+
+
+.small-btn {
+    display: inline-block;
+    padding: 8px 12px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
+    background-color: #ff69b4; /* Cute pink background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px; /* Slightly rounded corners */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.small-btn:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+}
+
+.soft-pill-btn:hover, .small-btn:hover {
+    transform: scale(1.05); /* Slightly grow the button */
+}
+
+
+
+
+@keyframes bounce {
+    0% {
+        transform: scale(1); /* Start at original size */
+    }
+    50% {
+        transform: scale(0.95); /* Shrink slightly */
+    }
+    100% {
+        transform: scale(1); /* Return to original size */
+    }
+}
+
+body {
+    font-family: 'Satisfy', cursive;
+    background-image: url('Background1.png'); 
+    background-size: cover; /* Cover the entire body */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header Styles */
+header {
+    position: relative; /* Required for the overlay */
+    background-image: url('Header1.png'); 
+    background-size: cover; 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    color: white;
+    padding: 40px; /* Increased padding for more height */
+    text-align: center;
+    border-bottom: 5px solid #eebdc8;
+    border-radius: 0 0 25px 25px;
+}
+
+
+header h1 {
+    font-size: 3em; /* Increase font size */
+    color: #ac4262; /* Bold pink color */
+    text-shadow: 
+        2px 2px 0 rgb(233, 233, 233), /* White shadow for contrast */
+        1px 1px 5px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+    position: relative; /* Required to bring it above the box */
+    z-index: 1; /* Above the box */
+}
+
+
+
+
+
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #ffffff; /* Light pink */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe6f2; /* Light pink hover color */
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff0f5; /* Very light pink */
+    border-radius: 25px;
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #d5006d; /* Deep pink */
+    font-size: 2em;
+}
+
+main p {
+    color: #6f3049; /* Dark pink for contrast */
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.profile-frame {
+    display: inline-block;
+    border: 5px solid #ff9aa3; /* Lighter pink border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 5px; /* Space between image and border */
+    margin-bottom: 20px; /* Space below the frame */
+}
+
+.profile-pic {
+    width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Round the image corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #ff9eb3; /* Light pink */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
+
+#Projects li {
+    margin-bottom: 1em; /* Space between projects */
+    font-size: 1.2em; /* Match the font size with other sections */
+    color: #6f3049; /* Match the color with the main text color */
+    font-family: 'Times New Roman', Times, serif; /* Ensure the font is consistent */
+}
+
+#Projects li a {
+    color: #ffffff; /* Use the same color as the buttons */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Match link font size */
+}
+
+#Projects li a:hover {
+    color: #efefef; /* Darker pink on hover */
+}
+
+#Projects ul, #Projects ol {
+    list-style-type: none; /* Remove bullets or numbering */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+#Projects ul {
+    text-align: left; /* Align text to the left */
+}
+
+#Projects li {
+    margin-bottom: 1.5em; /* Space between projects */
+    line-height: 1.5; /* Improve readability */
+}
+
+
+.project-link {
+    font-size: 0.9em; /* Smaller font size */
+    color: #0066cc; /* Link color */
+    text-decoration: underline; /* Underline for links */
+}
+
+.project-link:hover {
+    color: #004080; /* Color change on hover */
+}
+
+html, body {
+    height: 100%; /* Make sure the body takes full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+main {
+    flex: 1; 
+    padding: 20px;
+    text-align: center;
+    background-color: #fff0f5; /* Very light pink */
+    border-radius: 25px;
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff9eb3; /* Light pink */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+    margin-top: 30px; 
+}
+
+
+nav a.active-link {
+    color: #ff1493; /* Color for active link */
+    font-weight: bold; 
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between skills */
+}
+
+.skill {
+    background-color: #ffebf2; /* Soft background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 15px; /* Padding around the content */
+    text-align: center;
+    width: 100px; /* Fixed width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s; /* Smooth scale effect */
+}
+
+.skill:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.skill i {
+    font-size: 2em; /* Increase icon size */
+    color: #ff69b4; /* Cute pink color for icons */
+}
+
+.skill p {
+    margin-top: 10px; /* Space between icon and text */
+    font-family: 'Times New Roman', Times, serif; /* Consistent font */
+    color: #6f3049; /* Text color */
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between projects */
+}
+
+.project {
+    background-color: #ffebf2; /* Soft background */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners are applied */
+    text-align: center;
+    width: 200px; /* Fixed width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s; /* Smooth scale effect */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.project-thumbnail {
+    width: 100%; /* Full width */
+    border-bottom: 2px solid #ff69b4; /* Cute pink border */
+}
+
+.project-details {
+    display: none; /* Initially hide details */
+    padding: 10px; /* Padding for content */
+}
+
+.project-details p {
+    margin: 10px 0; /* Margin for paragraphs */
+    font-family: 'Times New Roman', Times, serif; /* Consistent font */
+    color: #6f3049; /* Text color */
+}
